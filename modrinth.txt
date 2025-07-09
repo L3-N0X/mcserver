@@ -3,7 +3,5 @@ simple-voice-chat
 chunky
 luckperms
 tab-was-taken
-mcbenchmark
 challenge
 timer
-serverbenchmark
