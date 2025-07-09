@@ -36,6 +36,7 @@ services:
       - ./nele-challenge/data:/data
       - ./nele-challenge/plugins:/plugins:ro
       - ./nele-challenge/icon.png:/icon.png
+      - ./modrinth.txt:/modrinth.txt:ro
 
 
   cloudflare-ddns:
