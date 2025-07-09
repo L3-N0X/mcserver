@@ -30,10 +30,21 @@ services:
       MODRINTH_PROJECTS: "@/extras/modrinth.txt"
       RESOURCE_PACK: https://nextcloud.goett.top/s/pwYrHzFM8N35JFZ/download/NELE-SERVER.zip
       RESOURCE_PACK_SHA1: 25eb16dc6a83c6d826fd8b54cc0bd654ee1142dc
+      RCON_CMDS_STARTUP: |-
+        chunky shape circle
+        chunky radius 2400
+        chunky start
+        chunky world world_nether
+        chunky shape circle
+        chunky radius 1000
+        chunky start
+        chunky world world_the_end
+        chunky shape circle
+        chunky radius 300
+        chunky start
     restart: unless-stopped
     volumes:
       - ./nele-challenge/data:/data
-      - ./nele-challenge/plugins:/plugins:ro
       - ./icon.png:/icon.png
       - ./modrinth.txt:/extras/modrinth.txt:ro
 
