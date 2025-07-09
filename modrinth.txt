@@ -1,4 +1,4 @@
-simple-voice-chat
+simple-voice-chat:beta
 # lmd
 chunky
 luckperms
