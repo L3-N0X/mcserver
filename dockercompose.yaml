@@ -28,7 +28,7 @@ services:
       ICON: /icon.png
       OVERRIDE_ICON: true
       MODRINTH_LOADER: paper
-      MODRINTH_PROJECTS: "@modrinth.txt"
+      MODRINTH_PROJECTS: "@/extras/modrinth.txt"
       RESOURCE_PACK: https://nextcloud.goett.top/s/pwYrHzFM8N35JFZ/download/NELE-SERVER.zip
       RESOURCE_PACK_SHA1: 25eb16dc6a83c6d826fd8b54cc0bd654ee1142dc
     restart: unless-stopped
@@ -36,7 +36,7 @@ services:
       - ./nele-challenge/data:/data
       - ./nele-challenge/plugins:/plugins:ro
       - ./nele-challenge/icon.png:/icon.png
-      - ./modrinth.txt:/modrinth.txt:ro
+      - ./modrinth.txt:/extras/modrinth.txt:ro
 
 
   cloudflare-ddns:
