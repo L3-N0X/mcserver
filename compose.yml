@@ -21,7 +21,7 @@ services:
       ALLOW_NETHER: true
       ALLOW_FLIGHT: true
       MAX_PLAYERS: 787
-      VIEW_DISTANCE: 14
+      VIEW_DISTANCE: 10
       SIMULATION_DISTANCE: 6
       ONLINE_MODE: true
       SPAW_PROTECTION: 0
@@ -34,6 +34,7 @@ services:
         chunky shape circle
         chunky radius 2400
         chunky start
+        chunky confirm
         chunky world world_nether
         chunky shape circle
         chunky radius 1000
